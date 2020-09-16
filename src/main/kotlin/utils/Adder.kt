@@ -19,9 +19,7 @@ class Adder(private val input: String) {
 
         for (i in 0 until steps) {
             if (i < steps - 1 || addToMiddle) {
-                firstHalfBuilder
-                    .append("${input[i]}${brackets[bracketsNumber % brackets.size].first}")
-                
+                firstHalfBuilder.append("${input[i]}${brackets[bracketsNumber % brackets.size].first}")
                 secondHalfBuilder
                     .append("${input[input.lastIndex - i]}${brackets[bracketsNumber % brackets.size].second}")
 
